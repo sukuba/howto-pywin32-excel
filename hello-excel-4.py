@@ -69,6 +69,8 @@ def main():
             for sheet in sheets:
                 print(sheet.Name)
                 cells = sheet.Range("A1").CurrentRegion()
+                #cells = sheet.Range("A1").CurrentRegion
+                # above two look like equivalent in this case
                 print(cells)
                 # represented as a tuple of row tuples
 
