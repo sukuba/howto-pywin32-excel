@@ -1,0 +1,32 @@
+[
+    [
+        "\u5e74\u5ea6",
+        "\u5206\u985e",
+        "\u30bf\u30a4\u30c8\u30eb",
+        "URL"
+    ],
+    [
+        "\u5e73\u621027\u5e74",
+        "\u30c0\u30a4\u30ba",
+        "\u30c0\u30a4\u30ba\u306e\u4f4e\u6e29\u7279\u6027",
+        "soybean/low-temp"
+    ],
+    [
+        "\u5e73\u621028\u5e74",
+        "\u30c0\u30a4\u30ba",
+        "\u30c0\u30a4\u30ba\u306e\u82b1\u7c89",
+        "soybean/pollen"
+    ],
+    [
+        "\u5e73\u621027\u5e74",
+        "\u30ca\u30bf\u30cd",
+        "\u30ca\u30bf\u30cd\u306e\u98df\u5bb3",
+        "oilseed/predators"
+    ],
+    [
+        "\u5e73\u621028\u5e74",
+        "\u30ca\u30bf\u30cd",
+        "\u30ca\u30bf\u30cd\u306e\u57cb\u571f\u7a2e\u5b50",
+        "oilseed/seedbank"
+    ]
+]
