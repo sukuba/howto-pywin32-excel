@@ -222,7 +222,7 @@ def make_json_files(params, args, sheets):
     converts Worksheets into json files.
     returns index of files generated.
     """
-    index = {}
+    index = []
     counter = 0
     
     for sheet in sheets:
@@ -238,12 +238,13 @@ def make_json_files(params, args, sheets):
         data = get_value(args, sheet, whole_table, url_table)
         
         counter += 1
-        file_name = os.path.join(args.dest, r'sheet%d.json' % counter)
+        file_name = r'sheet%d.json' % counter
+        full_file_name = os.path.join(args.dest, file_name)
         sheet_name = sheet.name
-        index[sheet_name] = file_name
-        print('%d: %s: %s' % (counter, file_name, sheet_name))
+        index += [{'title': sheet_name, 'url': file_name}]
+        print('%d: %s: %s' % (counter, full_file_name, sheet_name))
             
-        with codecs.open(file_name, 'w', 'utf-8') as outfile:
+        with codecs.open(full_file_name, 'w', 'utf-8') as outfile:
             json.dump(data, outfile, ensure_ascii=False, indent=4)
             
     if params['has_header']:
